@@ -1,0 +1,12 @@
+h2 {
+    width: 100%;
+}
+
+.banner {
+    height: 200px;
+    overflow: hidden;
+}
+
+#titulo_alterar {
+    font-size: 14px;
+}

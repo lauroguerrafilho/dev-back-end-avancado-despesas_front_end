@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-registrar.css">
+    <title>Registrar</title>
+    <script src="js/scripts-registrar.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Controle de Despesas</h2>
+        </div>
+
+    </header>
+    <div class="container col-11 col-md-9" id="form-container">
+        <div class="row gx-5">
+             <div class="col-md-2">
+                <div class="banner">
+                    <br> <br>
+                    <img src="img/sign_in.svg" alt="y">
+                </div>
+            </div>
+            <div class="col-md-10">
+                <br>
+                <h2>Realize o seu cadastro</h2>
+                <br>
+                <form>
+                    <div class="form mb-3">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" id="nome" required>
+                    </div>
+                    <div class="form mb-3">
+                        <label for="senha" class="form-label">Senha:</label>
+                        <input type="password"  id="senha" maxlength="30">
+                    </div>
+                    <div class="form mb-3">
+                        <label for="cpf" class="form-label">CPF:</label>
+                        <input type="cpf" class="form-label" id="cpf" name="cpf">
+                    </div>
+
+                    <div class="form mb-3">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-label" id="email" name="email">
+                        <label for="telefone" id="tel-label" class="form-label">Telefone:</label>
+                        <input type="text" id="telefone" size="12">
+                    </div>
+                </form>
+                    <!-- Inicio do formulario -->
+                 <form method="get" action=".">
+                     <div class="form mb-3">
+                        <label for="cep" class="form-label">CEP:</label>
+                        <input type="cep"  class="form-label" id="cep" name="cep"
+                               onblur="pesquisacep(this.value)">
+                     </div>
+                     <div class="form mb-3" >
+                        <label for="rua" class="form-label">Endereço:</label>
+                        <input name="rua" class="form-label" type="text" id="rua" >
+                        <label for="numero" id="num-label" class="form-label">Numero:</label>
+                        <input name="numero"  id="numero" size="10" class="form-label">
+                     </div>
+                     <div class="form mb-3">
+                        <label for="bairro" class="form-label">Bairro:</label>
+                         <input name="bairro" type="text" id="bairro"  class="form-label">
+                     </div>
+                     <div class="form mb-3">
+                        <label for="cidade" class="form-label">Cidade:</label>
+                        <input name="cidade" type="text" id="cidade"  class="form-label">
+                        <label for="uf" id="estado-label" class="form-label">   Estado:</label>
+                        <input name="uf" type="text" id="uf" size="2" class="form-label">
+                     </div>
+                </form>
+                <br>
+                <label></label>
+                <button type="button" class="addBtn" onclick="cadastrar()">Cadastrar</button>
+                <div class="col-12" id="link-container">
+                    <br>
+                    <a href="login.html" style="color: #1b1b1b" >Eu já tenho uma conta</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

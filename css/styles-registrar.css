@@ -1,0 +1,24 @@
+
+label {
+    width: 80px;
+}
+
+.banner {
+    height: 200px;
+    overflow: hidden;
+}
+
+.title {
+    background-color: #00449e;
+}
+
+.addBtn {
+    background-color: #00449e;
+}
+
+#tel-label,
+#num-label,
+#estado-label {
+    margin-left: 20px;
+}
+

@@ -1,0 +1,13 @@
+.banner {
+    height: 250px;
+    overflow: hidden;
+}
+
+
+.title {
+    background-color: #00449e;
+}
+
+.addBtn {
+    background-color: #00449e;
+}
